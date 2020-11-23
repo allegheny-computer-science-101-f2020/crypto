@@ -1,5 +1,3 @@
-package project;
-
 /** Decoder.
  * @author Lex Caldwell
  */ 
@@ -12,14 +10,10 @@ public class Decoder {
     System.out.println("This is your decoder!");
   }
 
-  // practice method to have a letter that will
-  // be equivalent to an integer
+  //practice method to have a letter that will
+  //be equivalent to an integer
   public void equalPlace(String n) {
    for(int i = 0; i < n.length(); i++){
-     if ((alphabet.indexOf(n.charAt(i)) + 1) == 0) {
-       System.out.println(" ");
-       continue;
-     }
      System.out.println(alphabet.indexOf(n.charAt(i)) + 1);
    }
   } // equalPlace end
