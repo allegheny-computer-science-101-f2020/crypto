@@ -17,7 +17,7 @@ public class Main {
     System.out.println("Enter your secret message: ");
     String ans = input.nextLine();
     
-    Decode decode = new Decode(ans);
+    Decoder decode = new Decoder(ans);
     
     System.out.println("This is the message you wrote: " + ans);
     System.out.println("This is your decoded message: ");
