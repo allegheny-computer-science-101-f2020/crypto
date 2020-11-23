@@ -1,0 +1,21 @@
+/** Decoder.
+ * @author Lex Caldwell
+ */ 
+
+public class Decoder {
+  
+  //instance variables that will be needed
+  private String alphabet = {"a","b","c","d","e","f","g","h",
+  "i","j","k","l","m","n","o","p","q","r","s","t","u","v","w",
+  "x","y","z"};
+  
+  
+  
+  //a trial method that will have a letter equal a number
+  public int equalPlace(String str) {
+    int num = 0;
+    char t = str.charAt(0);
+    num = Character.getNumericalValue(t) - 9;
+    return num;
+  } // end of equal place
+}
