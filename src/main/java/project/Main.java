@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Main {
 
   // TODO: add your implementation of the main method
+  /** This is our main method javadoc. */
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.println("Hello! Welcome to the decoder!");

@@ -11,16 +11,17 @@ public class Decoder {
   public Decoder(String input) {
     System.out.println("This is your decoder!");
   }
-
+  
   //practice method to have a letter that will
   //be equivalent to an integer
-  public void equalPlace(String n) {
-   for(int i = 0; i < n.length(); i++){
-     if ((alphabet.indexOf(n.charAt(i)) + 1) == 0) {
-       System.out.print(" ");
-       continue;
-     }
-     System.out.print(alphabet.indexOf(n.charAt(i)) + 1 + "-");
-   }
+  /** Equal Place ties a letter to a string. */
+  public void equalPlace(String str) {
+    for (int i = 0; i < str.length(); i++) {
+      if ((alphabet.indexOf(str.charAt(i)) + 1) == 0) {
+        System.out.print(" ");
+        continue;
+      }
+      System.out.print(alphabet.indexOf(str.charAt(i)) + 1 + "-");
+    }
   } // equalPlace end
 }
