@@ -1,10 +1,11 @@
-$package project;
+package project;
 
+import java.util.Scanner;
 
 /**
  * Class containing the main method.
  *
- * @author Add Your Name Here
+ * @author Lex Caldwell, 
  */
 
 public class Main {
@@ -33,8 +34,9 @@ public class Main {
   }
 
   // TODO: add your implementation of the main method
-  public static void main ... {
-
+  public static void main(String[] args) {
+    //scanner created
+    Scanner input = new Scanner(System.in);
   }
 
 }
