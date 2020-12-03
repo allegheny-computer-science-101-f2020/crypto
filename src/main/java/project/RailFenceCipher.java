@@ -24,7 +24,7 @@ public class RailFenceCipher {
 	public RailFenceCipher(int numRails) {
 		this.numRails = numRails;
 	}
-
+//call decrypted data
 	String getDecryptedData(String data) {
 		char[] decrypted = new char[data.length()];
 		int n = 0;
@@ -50,7 +50,7 @@ public class RailFenceCipher {
 		}
 		return new String(decrypted);
 	}
-
+//call the encrypted data
 	String getEncryptedData(String data) {
 			char[] encrypted = new char[data.length()];
 			int n = 0;
