@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 
 public class Main {
-  public String EnAtbash(String message) {
+  /*public String EnAtbash(String message) {
     String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     String tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
     String loweralphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -31,12 +31,13 @@ public class Main {
       }
     }
     return decodedstring();
-  }
+  }*/
 
   // TODO: add your implementation of the main method
   public static void main(String[] args) {
     //scanner created
     Scanner input = new Scanner(System.in);
+    
   }
 
 }

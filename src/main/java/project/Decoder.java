@@ -14,7 +14,7 @@ public class Decoder {
   
   //practice method to have a letter that will
   //be equivalent to an integer
-  /** Equal Place ties a letter to a string. */
+  /** letterToNumber ties a letter to a string. */
   public void letterToNumber(String str) {
     for (int i = 0; i < str.length(); i++) {
       if ((alphabet.indexOf(str.charAt(i)) + 1) == 0) {
@@ -23,5 +23,5 @@ public class Decoder {
       }
       System.out.print(alphabet.indexOf(str.charAt(i)) + 1 + "-");
     }
-  } // equalPlace end
+  } // letterToNumber end
 }
