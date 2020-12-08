@@ -33,10 +33,15 @@ public class Main {
     return decodedstring();
   }*/
 
-  // TODO: add your implementation of the main method
+  // add your implementation of the main method
   public static void main(String[] args) {
     //scanner created
     Scanner input = new Scanner(System.in);
+    System.out.println("Hello world!");
+    System.out.println("Enter a message: ");
+    String ans = input.nextLine();
+    Decoder hash = new Decoder(ans);
+    hash.letterToNumber(ans);
     
   }
 
