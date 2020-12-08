@@ -1,6 +1,6 @@
 package project;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Class containing the main method.
