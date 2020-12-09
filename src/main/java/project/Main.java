@@ -16,7 +16,7 @@ public class Main {
     System.out.println("Hello world!");
     System.out.println("Enter a message: ");
     String ans = input.nextLine();
-    System.out.println("Would you like to use Upper/Lowercase(0) or Decoder(1)");
+    System.out.println("Would you like to use Upper/Lowercase(0) or Decoder(1) or RailFence(2)");
     int number = input.nextInt();
     if (number == 0 ) {
       Alphabet alph = new Alphabet();
@@ -24,10 +24,14 @@ public class Main {
     } else if(number == 1){
       Decoder hash = new Decoder(ans);
       hash.letterToNumber(ans);
+    } else if (number == 2) {
+      System.out.println("Please enter the number (2) again: ");
+      int value = input.nextInt();
+      RailFenceCipher rail = new RailFenceCipher(value);
+      rail.getEncryptedData(ans);
     } else {
-      System.out.println("Please Enter A 0 or 1");
+      System.out.println("Please Enter A 0 or 1 or 2");
     }
 
   }
-
 }
