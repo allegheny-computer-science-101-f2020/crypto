@@ -8,24 +8,23 @@ import java.util.*;
 
 public class Alphabet {
   public String upper2Lower(String message) {
-    String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    String tebahpla = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
-    String loweralphabet = "abcdefghijklmnopqrstuvwxyz";
-    String lowertebahpla = "zyxwvutsrqponmlkjihgfedcba";
-    String decodedstring = "";
+    // String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    //  String loweralphabet = "abcdefghijklmnopqrstuvwxyz";
+    // String newMessage = message.toUpperCase();
+    // System.out.println(newMessage);
 
-      String newMessage = message.toUpperCase();
-      System.out.println(newMessage);
-
-for (int i = 0; i < message.length(); i ++) {
-  if (message.charAt(i).isUpperCase()) {
-
-    String Character = message.charAt(i).toLowerCase();
-    System.out.println(Character);
-  } else {
-    System.out.println("Did Not work");
+    StringBuffer newMessage = new StringBuffer();
+    for (int i = 0; i < message.length(); i ++) {
+      char[]word = new char[100];
+      word [i] = message.charAt(i);
+      if (Character.isLowerCase(word[i])) {
+        newMessage.append(Character.toUpperCase(word[i]));
+        } else {
+          newMessage.append(Character.toLowerCase(word[i]));
+        }
+      }
+      String newestMessage = newMessage.toString();
+      System.out.println("Your New Message is: " + newMessage.toString());
+      return newestMessage;
+    }
   }
-}
-return message;
-}
-}
