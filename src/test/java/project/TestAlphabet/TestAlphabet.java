@@ -6,16 +6,16 @@ package project;
  *
  * @author Peter Snipes
  */
-import org.junit.Assert;
+import static org.junit.Assert.assertEquals ;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class AlphabetTest {
+public class TestAlphabet {
 
   @Test
   public void testValidLetterSwitch() {
-    LetterChecker checker = new LetterChecker();
-    String validLetterSwitch = new String("");
-    boolean isValid = checker.check(validLetterSwitch);
-    assertTrue(isValid);
+    Alphabet alph = new Alphabet();
+    String validLetterSwitch = alph.upper2Lower("PeterSnipes");
+    assertEquals(validLetterSwitch, "pETERsNIPES");
   }
+}
