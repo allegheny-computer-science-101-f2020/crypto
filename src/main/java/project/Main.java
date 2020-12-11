@@ -22,8 +22,8 @@ public class Main {
       Alphabet alph = new Alphabet();
       alph.upper2Lower(ans);
     } else if(number == 1){
-      Decoder hash = new Decoder(ans);
-      hash.letterToNumber(ans);
+      Decoder decode = new Decoder(ans);
+      decode.letterToNumber(ans);
     } else if (number == 2) {
       System.out.println("Please enter the number (2) again: ");
       int value = input.nextInt();
