@@ -9,9 +9,10 @@ import java.util.*;
 public class Decoder {
   //instance variables
   private String alphabet = "abcdefghijklmnopqrstuvwxyz";
+  private String input; 
   
   public Decoder(String input) {
-    System.out.println("This is your decoder!");
+    this.input = input;
   }
   
   //practice method to have a letter that will
