@@ -21,7 +21,7 @@ public class Main {
     if (number == 0 ) {
       Alphabet alph = new Alphabet();
       alph.upper2Lower(ans);
-    } else if(number == 1){
+    } else if (number == 1){
       Decoder hash = new Decoder(ans);
       hash.letterToNumber(ans);
     } else if (number == 2) {

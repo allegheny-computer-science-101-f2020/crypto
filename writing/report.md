@@ -1,4 +1,5 @@
 # Report by Add Your Name(s)
+zackery devers, peter snipes, alexis caldwell
 
 ## Design of your Program
 
@@ -13,4 +14,3 @@ Include commands needed to run and test your project
 ## Description of the challenges that you faced and how you resolved them
 
 ## If worked in a team, description of the way in which you and your team members shared the project work
-
