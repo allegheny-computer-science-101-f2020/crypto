@@ -9,7 +9,9 @@ import java.util.*;
  */
 
 public class Main {
-  // add your implementation of the main method
+  /**
+   * add your implementation of the main method
+   */
   public static void main(String[] args) {
     //scanner created
     Scanner input = new Scanner(System.in);
@@ -21,7 +23,7 @@ public class Main {
     if (number == 0 ) {
       Alphabet alph = new Alphabet();
       alph.upper2Lower(ans);
-    } else if(number == 1){
+    } else if (number == 1) {
       Decoder hash = new Decoder(ans);
       hash.letterToNumber(ans);
     } else if (number == 2) {
