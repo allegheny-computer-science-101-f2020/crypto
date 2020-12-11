@@ -16,7 +16,7 @@ public class Main {
     System.out.println("Hello world!");
     System.out.println("Enter a message: ");
     String ans = input.nextLine();
-    System.out.println("Would you like to use Upper/Lowercase(0) or Decoder(1) or RailFence(2)");
+    System.out.println("Would you like to use Upper/Lowercase(0) or LetterToNumber(1) or RailFence(2)");
     int number = input.nextInt();
     if (number == 0 ) {
       Alphabet alph = new Alphabet();
