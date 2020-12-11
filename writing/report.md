@@ -2,7 +2,7 @@
 # Report by Add Your Name(s)
 zackery devers, peter snipes, alexis caldwell
 =======
-# Report by Lex Caldwell
+# Report by Lex Caldwell, zackery devers, and peter snipes
 >>>>>>> 01ce117d00021d64bd0c40c4e7f6022c29e664a1
 
 ## Design of your Program
@@ -20,8 +20,34 @@ a number rather than a letter at the specified index.
 ## Evaluation and Testing of your Program
 
 Include program input and output and output of test cases in code blocks
+```
+> Task :run
+Hello world!
+Enter a message:
+
+xoxoxoxoxoxoxoxo
+
+<=====<========<<=========----> 75% EXECUTING [9s]
+
+Would you like to use Upper/Lowercase(0) or Decoder(1) or RailFence(2)
+
+<<=========----> 75% EXECUTING [12s]
+
+Please enter the number (2) again:
+
+<=========----> 75% EXECUTING [12s]
+
+xxxxxxxxoooooooo
+
+BUILD SUCCESSFUL in 14s
+2 actionable tasks: 1 executed, 1 up-to-date
+root@22384f4dbd21:/project#
+```
+This is an example of my code running with its test case, with the railFenceCipher having the xoxoxoxoxoxoxoxo run through the program and outputted with the encoded cipher : xxxxxxxxoooooooo.
 
 Include commands needed to run and test your project
+
+the only commands needed to run our test is the user imputs and answers to the questions.
 
 ## Description of the challenges that you faced and how you resolved them
 Lex: One of the challenges I faced was attempting to implement a hashmap to use as a decoder.
@@ -33,7 +59,9 @@ the A1Z26 code was fairly easy although I did run into some fixable out of bound
 
 Peter: One of the challenges I faced during this group project was getting my code to switch from upper to lower and lower to upper.
 I met with Megan and she explained to me how a string StringBuffer worked and that's what I ended up using to develop my code it it worked out
-for me. 
+for me.
+
+Zackery: one of the challenges i faced during this group project was making the code i wrote work with the way my team had their setup. My code was originally designed to intake a int but it was a str argument that out team decided on. With the help of the TA megan i was able to make the str the user inputted to be swtiched into an integer and then printed back into the Str output.
 ## If worked in a team, description of the way in which you and your team members shared the project work
 <<<<<<< HEAD
 =======
