@@ -9,16 +9,29 @@ import java.util.*;
 public class Decoder {
   //instance variables
   private String alphabet = "abcdefghijklmnopqrstuvwxyz";
+  private String input; 
   
   public Decoder(String input) {
-    System.out.println("This is your decoder!");
+    this.input = input;
   }
   
   //practice method to have a letter that will
   //be equivalent to an integer
   /** letterToNumber ties a letter to a string. */
   public void letterToNumber(String str) {
-    Map<String, Integer> hm1 = new HashMap<>();
+   for (int i = 0; i < str.length(); i++) {
+      if ((alphabet.indexOf(str.charAt(i)) + 1) == 0) {
+        System.out.print(" ");
+        continue;
+      }
+      System.out.print(alphabet.indexOf(str.charAt(i)) + 1 + "-");
+    }
+  }
+}
+
+/** This was my attempt to create a hashmap version of letterToNumber. */
+/** It halfway works meaning it turns a letter to a number however, when user goes to add a space to the message it fails. */
+/* Map<String, Integer> hm1 = new HashMap<>();
     hm1.put("a",1);
     hm1.put("b",2);
     hm1.put("c",3);
@@ -54,5 +67,4 @@ public class Decoder {
           System.out.print(num + "-");
         } //end of the if 
       }// end of the for
-  } // letterToNumber end
-}
+     */
